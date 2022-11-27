@@ -15,7 +15,10 @@ public class MainActivity extends AppCompatActivity {
 
 
     Float value1,value2;
-    Boolean topla_durum = false,cikartma_durum=false,carpma_durum= false, bolme_durum = false;
+    Boolean topla_durum = false,
+            cikartma_durum=false,
+            carpma_durum= false,
+            bolme_durum = false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -161,8 +164,6 @@ public class MainActivity extends AppCompatActivity {
         bolme.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-
                     value1 = Float.parseFloat(sonuc.getText() + "");
                     bolme_durum = true;
                     sonuc.setText("");
@@ -176,28 +177,30 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 value2 =Float.parseFloat(sonuc.getText()+"");
                 sonuc.setText("");
-                if(topla_durum=true)
-                {sonuc.setText(value1+value2+"");
-                    topla_durum=false;}
 
 
-                if(cikartma_durum=true) {
+
+                if(cikartma_durum==true) {
                     sonuc.setText(value1-value2+"");
                     cikartma_durum=false;
                 }
-
-                if(carpma_durum=true)
+                if(carpma_durum==true)
                 {
                     sonuc.setText(value1*value2+"");
                     carpma_durum=false;
 
                  }
+                if (topla_durum==true)
+                {sonuc.setText(value1+value2+"");
+                    topla_durum=false;}
 
-                if(bolme_durum=true)
+
+                if(bolme_durum==true)
                 {
                     sonuc.setText(value1/value2+"");
                     bolme_durum=false;
                 }
+
 
 
             }

@@ -88,11 +88,12 @@
 
     <Button
         android:id="@+id/button9"
-        android:layout_width="313dp"
+        android:layout_width="100dp"
         android:layout_height="149dp"
         android:layout_marginStart="44dp"
         android:layout_marginTop="40dp"
         android:layout_marginBottom="40dp"
+        android:rotationY="10"
         android:text="9"
         app:layout_constraintBottom_toTopOf="@+id/button6"
         app:layout_constraintStart_toEndOf="@+id/button8"
@@ -123,8 +124,8 @@
         android:id="@+id/esittir"
         android:layout_width="137dp"
         android:layout_height="134dp"
-        android:layout_marginEnd="5dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="12dp"
         android:text="="
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -153,14 +154,14 @@
         android:id="@+id/bolme"
         android:layout_width="80dp"
         android:layout_height="70dp"
-        android:layout_marginStart="44dp"
+        android:layout_marginStart="52dp"
         android:layout_marginTop="68dp"
         android:layout_marginBottom="28dp"
         android:text="/"
         app:layout_constraintBottom_toTopOf="@+id/button8"
         app:layout_constraintStart_toEndOf="@+id/carpma"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/carpma"
@@ -178,8 +179,10 @@
         android:layout_height="60dp"
         android:layout_marginTop="168dp"
         android:layout_marginEnd="48dp"
+        android:layout_marginBottom="12dp"
         android:background="@color/design_default_color_background"
         android:text="AC"
+        app:layout_constraintBottom_toTopOf="@+id/esittir"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
